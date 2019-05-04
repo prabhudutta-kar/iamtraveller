@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Traveller</title>
+     
+    <link rel="stylesheet" href="css/hotel.css">
+    
+    
+    
+<!-------Bootstrap------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-------Font Awesome---------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+<!------- Google Fonts -------->
+   
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css?family=Cinzel:700|Righteous|Uncial+Antiqua" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet"> <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+       
+    
+<!---------  Animate CSS --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+<!---------  Animate On Scroll --------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+<!--------  Script ------------->
+   
+    <!--jQuery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!--Popper Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!--Bootstrap Js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     
+      <script>
+            window.isMbscDemo = true;
+        </script>
+
+<!--        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>-->
+        <script src="js/mobiscroll.jquery.min.js"></script>
+
+<body id="page-top">
+
+ <!-------------- Navigation ------------->
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger animated infinite bounce slow" href="index.html" style="font-family: 'Lobster', cursive; letter-spacing: 2px;"><img src="img/logo.png"> IamTraveller</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#book"><i class="fas fa-hotel"></i> Book</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#review"><i class="fas fa-street-view"></i> Review</a>
+          </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-globe"></i>
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="flight.html"><i class="fas fa-plane"></i> Flight</a>
+          <a class="dropdown-item" href="hotel.html"><i class="fas fa-hotel"></i> Hotel</a>
+          <a class="dropdown-item" href="car.html"><i class="fas fa-car"></i> Car</a>
+          <a class="dropdown-item" href="bus.html"><i class="fas fa-bus"></i> Bus</a>
+        </div>
+      </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+<!-------------------Book Flight------------------->
+
+<section id="services">
+    <div class="container">
+      <h1 data-aos="zoom-in" data-aos-duration="2500"data-aos-delay="5500">Book <i class="fas fa-hotel" style="color: rgb(253, 171, 0)"></i>  Hotel</h1>
+       <div class="jumbotron">
+           <h1 class="display-4"><span class="typed"></span><span class="typed-1"></span></h1>
+           <h1 class="display-4"><span class="typed-2"></span><span class="typed-3"></span></h1>
+          <p data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="2500">“Hospitality is simply an oppurtunity to show love and care.”</p>
+        </div>
+        
+
+<!-------------Booking Form----------------->
+
+<div id="book" mbsc-page class="demo-flight-booking" data-aos="fade-up" data-aos-duration="2500"data-aos-delay="5500">
+    <div id="demo" class="md-flight-booking" mbsc-form>
+    
+        <label>
+                Multi-Day
+                <input type="radio" data-role="segmented" value="round" name="triptype" class="md-flight-type" checked />
+            </label>
+        <label>
+                Single Day
+                <input type="radio" data-role="segmented" value="oneway" name="triptype" class="md-flight-type md-one-way" />
+            </label>
+        <div class="mbsc-form-group">
+    
+            <label>
+            Location
+            <select class="md-place-select">
+                <option>Please select a city</option>
+            </select>
+        </label>
+    
+            <label>
+                Check-in
+                <input type="text" class="md-leaving-date" />
+            </label>
+    
+            <label>
+                Check-out
+                <input type="text" class="md-return-date" />
+            </label>
+        </div>
+        <div class="mbsc-form-group">
+            <label>
+            Adults
+            <span class="mbsc-desc">From 14 years</span>
+            <input type="number" data-role="stepper" min="1" value="1" max="15" data-val="left" />
+        </label>
+    
+            <label>
+            Children
+            <span class="mbsc-desc">2-14 years</span>
+            <input type="number" data-role="stepper" max="15" data-val="left" />
+        </label>
+    
+            <label>
+            Infant
+            <span class="mbsc-desc">0-2 years</span>
+            <input type="number" data-role="stepper" max="10" data-val="left" />
+        </label>
+        </div>
+        <div class="mbsc-btn-group-block">
+            <button>Find Hotels</button>
+        </div>
+    </div>
+</div>
+
+<!---------User Review------------>
+
+<section class="users-feedback">
+    <h1 id="review" data-aos="fade-up" data-aos-duration="2500"data-aos-delay="5500">Users Review</h1>
+    <div class="container" data-aos="fade-up" data-aos-duration="2500"data-aos-delay="5500">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="user-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ullam, a? Quo suscipit quidem natus animi eaque inventore, explicabo quia!</p>
+                    <h5>John Doe</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="img/user-1.jpg" alt="">
+            </div>
+               <div class="col-md-4">
+                <div class="user-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ullam, a? Quo suscipit quidem natus animi eaque inventore, explicabo quia!</p>
+                    <h5>Lucy Mathews</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="img/user-2.jpg" alt="">
+            </div>
+               <div class="col-md-4">
+                <div class="user-review">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ullam, a? Quo suscipit quidem natus animi eaque inventore, explicabo quia!</p>
+                    <h5>Jonathan Swift</h5>
+                    <small>Los Angeles</small>
+                </div>
+                <img src="img/user-3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    </section>
+
+<!------------ Footer ------------->
+ 
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      <span>Made  with </span> <i class="fas fa-heart" style="color: red"></i>  <span>  by  Prabhudutta Kar</span>
+    </div>
+  </footer>
+
+<!-- Plugin JavaScript -->
+  <script src="js/jquery-easing/jquery.easing.min.js"></script>
+
+
+<script>
+
+    mobiscroll.settings = {
+        theme: 'ios-dark',                         
+            lang: 'en'                             
+    };
+    
+    $(function () {
+    
+        var now = new Date(),
+            oneWay = false,
+            range,
+            departureDate,
+            returnDate;
+    
+        range = $('.md-leaving-date').mobiscroll().range({
+            endInput: '.md-return-date',           
+            min: now,                              
+            showSelector: false,                   
+            onSetDate: function (event, inst) {    
+                if (oneWay && event.control == 'calendar' && event.active == 'start') {
+                    inst._isVisible = false;
+                    inst.setActiveDate('start');
+                    inst._isVisible = true;
+                }
+                if (inst._markup) {
+                    inst._isValid = true;
+                    inst._markup.find('.mbsc-fr-btn-s .mbsc-fr-btn').removeClass('mbsc-fr-btn-d' + (oneWay ? ' mbsc-disabled' : ''));
+                }
+            },
+            onBeforeClose: function () {           
+                if (oneWay) {
+                    return true;
+                }
+            },
+            onSet: function (event, inst) {        
+                var values = inst.getVal();
+                departureDate = values[0];
+                if (!oneWay) {
+                    returnDate = values[1];
+                }
+            }
+        }).mobiscroll('getInst');
+    
+        // Mobiscroll Range initialization
+        $('.md-place-select').mobiscroll().select({
+            placeholder: 'Please select a city',
+            multiline: 2,                          
+            height: 50,                            
+            data: {
+                url: 'https://trial.mobiscroll.com/airports/',
+                remoteFilter: true,
+                dataType: 'jsonp',
+                processResponse: function (data) {
+                    var i,
+                        item,
+                        ret = [];
+    
+                    if (data) {
+                        for (i = 0; i < data.length; i++) {
+                            item = data[i];
+                            ret.push({
+                                value: item.code,
+                                text: item.name,
+                                html: '<div style="font-size:16px;line-height:18px;">' + item.name + '</div><div style="font-size:10px;line-height:12px;">' + item.location + ', ' + item.code + '</div>'
+                            });
+                        }
+                    }
+                    return ret;
+                }
+            },
+            filter: true
+        });
+
+        $('.md-flight-type').on('change', function () {
+            oneWay = this.value == 'oneway';
+            $('.md-return-date').prop('disabled', oneWay);
+            if (oneWay) {
+                range.setVal([departureDate], true);
+                range.option({
+                    defaultValue: [departureDate]  
+                     
+                });
+            } else {
+                returnDate = new Date(departureDate.getFullYear(), departureDate.getMonth(), departureDate.getDate() + 4);
+                range.setVal([departureDate, returnDate], true);
+            }
+        });
+    
+        departureDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 3);
+        returnDate = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7);
+        range.setVal([departureDate, returnDate], true);
+    
+    });
+</script>
+ 
+ <script type="text/javascript" src="js/main.js"></script>
+  <!--  Typed.js-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script>
+        var typed = new Typed(".typed", {
+      // Waits 1000ms after typing "First"
+      strings: ["More than "],
+            typeSpeed: 90
+    }); 
+       var typed1 = new Typed(".typed-1", {
+      // Waits 1000ms after typing "First"
+      strings: [ "home"],
+            typeSpeed: 90,
+            startDelay: 1500
+    });  
+      var typed1 = new Typed(".typed-2", {
+      // Waits 1000ms after typing "First"
+      strings: [ " No less than"],
+            typeSpeed: 90,
+            startDelay: 2500
+    });  
+      var typed1 = new Typed(".typed-3", {
+      // Waits 1000ms after typing "First"
+      strings: [ "palace"],
+            typeSpeed: 90,
+            startDelay: 3500
+    });  
+  </script>
+   <!--   Animate on Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>  
+
+<!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/scroll.js"></script>
+</body>
+</html>
